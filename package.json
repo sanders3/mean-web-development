@@ -1,0 +1,16 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "Working through \"MEAN Web Development\" by Amos Q Haviv",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mark Sanders",
+  "license": "ISC"
+}

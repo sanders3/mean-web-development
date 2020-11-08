@@ -2,6 +2,6 @@
 
 Working through "MEAN Web Development" by Amos Q Haviv.
 
-First "server.js" - responds with "Hello, World!" to all requests -- including `GET / favicon.ico`
+Updated "server.js" to use Connect. No path so favicon.ico is still 'Hello, World!'.
 
 See https://www.packtpub.com/product/mean-web-development/9781783983285

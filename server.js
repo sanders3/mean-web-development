@@ -1,11 +1,13 @@
-const http = require('http');
+const connect = require('connect');
 
-http.createServer(function server(req, res) {
-    res.writeHead(200, { 
-        'Content-Type': 'text/plain'
-    });
-    res.write('Hello, World!');
-    res.end();
-}).listen(3000);
+const app = connect();
+
+const helloWorld = function helloWorld (req, res, next) {
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello, World!');
+};
+
+app.use(helloWorld);
+app.listen(3000);
 
 console.log('Server running at http://localhost:3000/');
