@@ -1,13 +1,7 @@
-const express = require('express');
+const express = require('./config/express');
 
 const app = express();
-
-app.use('/', function helloWorld (req, res) {
-    res.send('Hello, World!');
-});
-
 app.listen(3000);
+module.exports = app
 
 console.log('Server running at http://localhost:3000/');
-
-module.exports = app
